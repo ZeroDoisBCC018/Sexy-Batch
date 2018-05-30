@@ -1,2 +1,2 @@
 # Sexy-Batch
-Zoeiras em Batch, a linguagem mais sexy.
+Programação orientada à gambiarras.
