@@ -1,5 +1,9 @@
 @echo on
-msg * "Nao feche a janela, iremos avisar quando terminar"
+
+echo x=msgbox("Nao feche a janela, iremos avisar quando terminar" ,0, "Velocimetro") >> msgbox.vbs
+
+start msgbox.vbs
+
 ::Minimizar
 if not "%minimized%"=="" goto :minimized
 
