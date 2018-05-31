@@ -1,2 +1,2 @@
 # Sexy-Batch
-Programação orientada às gambiarras.
+Programação orientada a gambiarras.
