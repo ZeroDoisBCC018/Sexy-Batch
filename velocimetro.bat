@@ -1,3 +1,6 @@
+:: Velocímetro que pontua o processador
+:: Durante a execução, evite outros processos
+
 @echo on
 
 echo x=msgbox("Nao feche a janela, iremos avisar quando terminar" ,0, "Velocimetro") >> msgbox.vbs
@@ -7,18 +10,13 @@ start msgbox.vbs
 ::Minimizar
 if not "%minimized%"=="" goto :minimized
 
-
  set minimized=true
-
 
 start /min cmd /C "%~dpnx0"
 
 goto :EOF
 
-
  :minimized
-::
-
 
 setlocal enabledelayedexpansion
 for /f "tokens=3 delims=:" %%t in ('echo/%time%') do (
