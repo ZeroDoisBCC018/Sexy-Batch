@@ -39,7 +39,7 @@ CLS
 
 :loop
 	echo %message% > FODA-SE
-	sleep (01)
+	SLEEP (0.05)
 	CLS
 
 	goto loop
