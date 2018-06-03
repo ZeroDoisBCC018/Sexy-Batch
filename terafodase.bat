@@ -35,11 +35,12 @@ if not exist *.txt (
 set message=FODA-SE
 
 DIR Desktop
+CLS
 
 :loop
 	echo %message% > FODA-SE
 	sleep (01)
-	pause>nul & exit
+	CLS
 
 	goto loop
 	
