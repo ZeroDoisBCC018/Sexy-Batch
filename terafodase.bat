@@ -1,14 +1,12 @@
 @echo on
 
 echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs
-
 start msgbox.vbs
 
 if not "%minimized%"=="" 
 	goto :minimized
 
 set minimized=true
-
 start /min cmd /C "%~dpnx0"
 
 :minimized
