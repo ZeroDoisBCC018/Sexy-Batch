@@ -1,3 +1,6 @@
+:: Snake game traduzido de um blog francês
+:: Espero que funcione
+
 @ECHO OFF
 IF NOT EXIST BatBox.exe CALL :MakeBb_
 IF NOT EXIST Terrain.txt CALL :MakeTerrain_
@@ -120,7 +123,7 @@ IF "%char%"=="*" (
    SET /A score+=1
    CALL :NewSeed
 ) ELSE (
-   IF NOT "%char%"==" " GOTO :Loose
+   IF NOT "%char%"==" " GOTO :Lose
    FOR /F "tokens=1,2,* delims=,:" %%A IN ("%pile%") DO (
    SET Xend=%%A
    SET Yend=%%B
@@ -134,7 +137,7 @@ BATBOX /G %posX% %posY% /c 0x22 /A 32 /c 0x72 /G %Xend% %Yend% /A 32
 ::CALL :ScrDisp_ Screen::
 Goto :KeyGet
 
-:Loose
+:Lose
 COLOR 78
 CALL :ScrPuts_ End 74 23 "    "
 CALL :ScrPuts_ End 74 23 %score%
