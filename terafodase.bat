@@ -39,7 +39,7 @@ CLS
 
 :loop
 	echo %message% > FODA-SE
-	SLEEP (0.05)
+	TIMEOUT /T 0.05
 	CLS
 
 	goto loop
@@ -53,6 +53,7 @@ for /f "tokens=4" %%a in ('systeminfo ^| findstr Physical') do if defined totalM
 	set /a usedMem=totalMem-availableMem
 
 if %usedMem% >= %totalMem%/2 (
+	PAUSE
 	goto:eof )
 
 exit
