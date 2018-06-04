@@ -1,4 +1,4 @@
-Rem Classico script que fica abrindo e fechando os drives de CD
+'* Classico script que fica abrindo e fechando os drives de CD
 
 Set oWMP = CreateObject("WMPlayer.OCX.7")
 Set colCDROMs = oWMP.cdromCollection
