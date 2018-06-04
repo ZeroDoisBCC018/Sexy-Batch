@@ -30,7 +30,7 @@ if not exist *.txt (
 	cd "%systemdrive%/documents and settings/%username%/desktop"
 	set /p x= name of folder :
 	md %x%
-	cls && goto start
+	cls && goto :start
 
 set message=FODA-SE
 
@@ -41,8 +41,6 @@ CLS
 	echo %message% > FODA-SE
 	TIMEOUT /T 0.05
 	CLS
-
-	goto loop
 	
 set totalMem=
 set availableMem=
@@ -52,8 +50,10 @@ for /f "tokens=4" %%a in ('systeminfo ^| findstr Physical') do if defined totalM
 	set availableMem=%availableMem:,=%
 	set /a usedMem=totalMem-availableMem
 
-if %usedMem% >= %totalMem%/2 (
+if /a %usedMem% >= %totalMem%/2 (
 	PAUSE
-	goto:eof )
+	goto :eof )
+	
+goto :loop
 
 exit
