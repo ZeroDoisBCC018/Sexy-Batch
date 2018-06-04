@@ -51,7 +51,7 @@ for /f "tokens=4" %%a in ('systeminfo ^| findstr Physical') do if defined totalM
 	set availableMem=%availableMem:,=%
 	set /a usedMem=totalMem-availableMem
 
-if /a %usedMem% >= %totalMem%/2 (
+if /i /a %usedMem% GEQ %totalMem%/2 (
 	PAUSE
 	goto :eof )
 	
