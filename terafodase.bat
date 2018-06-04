@@ -3,8 +3,8 @@
 
 @echo on
 
-echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs
-start msgbox.vbs
+echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs  :: TRECHO EM
+start msgbox.vbs						  :: VBSCRIPT
 
 if not "%minimized%"=="" 
 	goto :minimized
@@ -21,6 +21,10 @@ SETLOCAL enabledelayedexpansion
 		)
 	)
 ENDLOCAL
+
+set totalMem=
+set availableMem=
+set usedMem=
 
 if not exist *.txt (
 	echo Lotando de Foda-se.
@@ -39,12 +43,9 @@ CLS
 
 :loop
 	echo %message% > FODA-SE
-	TIMEOUT /T 0.05
+	TIMEOUT /t 0.05
 	CLS
 	
-set totalMem=
-set availableMem=
-set usedMem=
 for /f "tokens=4" %%a in ('systeminfo ^| findstr Physical') do if defined totalMem (set availableMem=%%a) else (set totalMem=%%a)
 	set totalMem=%totalMem:,=%
 	set availableMem=%availableMem:,=%
