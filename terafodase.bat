@@ -3,8 +3,8 @@
 
 @echo on
 
-echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs  :: TRECHO EM
-start msgbox.vbs						  :: VBSCRIPT
+echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs  Rem TRECHO EM
+start msgbox.vbs						  Rem VBSCRIPT
 
 if not "%minimized%"=="" 
 	goto :minimized
