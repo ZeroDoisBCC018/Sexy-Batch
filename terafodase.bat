@@ -57,4 +57,6 @@ if /i /a %usedMem% GEQ %totalMem%/2 (
 	PAUSE>nul
 	goto :eof )
 	
+:: CARALHO EH POR ISSO QUE NAO RODA NO PC DO LAB, A MEMORIA DE LA SO TEM 40 GB SOBRANDO (de 450 gb)
+	
 goto :loop
