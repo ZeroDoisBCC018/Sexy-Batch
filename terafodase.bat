@@ -28,6 +28,8 @@ set usedMem=
 
 if not exist *.txt (
 	echo Lotando de Foda-se.
+	echo.
+	echo.
 	) 
 
 :start
