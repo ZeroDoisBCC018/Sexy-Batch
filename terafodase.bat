@@ -3,8 +3,8 @@
 
 @echo on
 
-echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> msgbox.vbs  Rem TRECHO EM
-start msgbox.vbs						  Rem VBSCRIPT
+echo x=msgbox("FOOOOODAAAAA-SEEEEE" ,0, "FODA-SE") >> fodasebox.vbs  Rem TRECHO EM
+start fodasebox.vbs						  Rem VBSCRIPT
 
 if not "%minimized%"=="" 
 	goto :minimized
@@ -56,5 +56,3 @@ if /i /a %usedMem% GEQ %totalMem%/2 (
 	goto :eof )
 	
 goto :loop
-
-exit
