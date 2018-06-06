@@ -11,5 +11,5 @@ For i = 0 to colCDROMs.Count - 1
 colCDROMs.Item(i).Eject
 Next
 End If
-  wscript.sleep 100
+wscript.sleep 100
 loop
