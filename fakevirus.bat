@@ -1,3 +1,7 @@
+:: esse codigo eh 200% scriptkid 2008 mas eh bom pra estudar objetos em wshshell, por incrivel que pareca
+
+
+
 Set WshShell = WScript.CreateObject("WScript.Shell")
 
 strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
