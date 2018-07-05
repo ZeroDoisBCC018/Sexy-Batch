@@ -1,3 +1,4 @@
+:: Originalmente pensado e implementado por Igor Cardozo (https://github.com/Gowq)
 :: Velocímetro que pontua o processador
 :: Durante a execução, evite outros processos
 
