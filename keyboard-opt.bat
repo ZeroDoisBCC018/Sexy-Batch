@@ -2,7 +2,8 @@
 TITLE Teclab - Otimizador de pc v1
 echo Teclab - Otimizador de pc v1
 echo.
-echo (C) Eike e Andre-Mr Bean - Todos direitos reservados. :: forked from Eike Straub
+:: forked from Eike Straub
+echo (C) Eike e Andre-Mr Bean - Todos direitos reservados.
 echo.
 echo Este programa nao vai fazer nenhuma alteracao no seus arquivos se quiser voltar a este ponto e eliminar este programa do seu pc use a restauracao do sistema
 echo.
