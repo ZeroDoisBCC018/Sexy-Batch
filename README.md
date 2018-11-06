@@ -1,2 +1,2 @@
-# Sexy-Batch
+# batimancodes
 Programação orientada a gambiarras.
